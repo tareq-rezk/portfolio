@@ -1,0 +1,155 @@
+.card-rotate {
+    perspective: 120rem;
+    -moz-perspective: 120rem;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    
+    @include respond(tab-land){
+        width: 80%;
+    }
+
+    &-front,
+    &-back {
+        color:$color_white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 33rem;
+        width: 100%;
+        backface-visibility:  hidden;
+        transition: all .7s linear;
+        border-radius: 5px;
+        box-shadow: 0 1rem 3rem rgba($Color_darkGrey,.8);
+        overflow: hidden;
+        color: $Color_darkGrey;
+    }
+   
+    
+    &-front {
+        transform: rotateY(0deg);
+        position: relative;
+        
+        .front-heading {
+            position:  absolute;
+            text-align: right;
+            color:$color_white;
+            top:10rem;
+            right: 1rem;
+            width: 60%;
+            text-transform:  uppercase;
+            font-size: 1.5rem;
+            
+
+            span{
+                background-image: $background-gradient;
+                color: $color_tomato;
+                padding: .5rem .8rem;
+                -webkit-box-decoration-break : clone;
+                box-decoration-break : clone;
+                font-weight: 800;
+                color:$color_white;
+                
+            }
+            .s-1 {
+                background-image:linear-gradient(to right bottom, rgba(21, 224, 130, 0.6), rgba(14, 150, 86, 0.6)) ;
+             
+            }
+
+            .s-2 {
+                background-image:linear-gradient(to right bottom, rgba(196, 191, 125, 0.6), rgba(111, 143, 36, 0.6));
+            }
+
+            .s-3 {
+                background-image:linear-gradient(to right bottom, rgba(175, 34, 34, 0.6), rgba(160, 77, 77, 0.6));
+            }
+        }
+
+        .front-details {
+            margin: 2rem auto;
+            width: 85%;
+            
+        }
+
+
+        }
+
+    &-back {
+        display: flex;
+        align-content:  center;
+        flex-direction:  column;
+        align-items:  center;
+        justify-content:  center;
+       
+        background-image: linear-gradient(to right bottom, #9bc7c2, #dad5c7, #c9c4c1, rgb(214, 207, 207), #a1cfe4);
+
+         
+        color: #fff;
+        transform: rotateY(180deg);
+
+        ul {
+            list-style: none;
+            
+            
+            li {
+                font-size: .9rem;
+                padding: .6rem;
+                font-weight: 300;
+                width: 100%;
+                &:not(:last-child){
+                    border-bottom: 1px solid $Color_grey;
+                }
+            }
+        }
+        
+        }
+
+    &:hover .card-rotate-front {
+        transform: rotateY(-180deg);
+    }
+    &:hover .card-rotate-back {
+        transform: rotateY(0);
+    }
+
+
+    .front-img {
+        background-size:  cover;
+        background-repeat:  no-repeat;
+        height: 15rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        
+        &-1 {
+            background-image:linear-gradient(to right bottom, rgba(53, 171, 177,.6), rgba(65, 172, 171,.6)),
+              url("../../images/nat-5.jpg");
+            background-position:  bottom;
+        }
+        &-2 {
+            background-image:linear-gradient(to right bottom, rgba(21, 224, 130, 0.6), rgba(14, 150, 86, 0.6)),
+              url('../../images/nat-6.jpg');
+            background-position:  bottom;
+        }
+        &-3 {
+            background-image:linear-gradient(to right bottom, rgba(184, 88, 33, 0.6), rgba(92, 92, 92, 0.6)),
+              url('../../images/nat-7.jpg');
+            background-position:  bottom;
+        }
+    
+}
+
+        .back-1 {
+            background-image:linear-gradient(to right bottom, rgba(21, 224, 130, 0.6), rgba(14, 150, 86, 0.6)) ;
+
+        }
+        .back-2 {
+            background-image:linear-gradient(to right bottom, rgba(196, 191, 125, 0.6), rgba(111, 143, 36, 0.6));
+        }
+
+        .back-3 {
+            background-image:linear-gradient(to right bottom, rgba(175, 34, 34, 0.6), rgba(160, 77, 77, 0.6))
+        }
+} 
+   
+   
+

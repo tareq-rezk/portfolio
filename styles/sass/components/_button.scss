@@ -1,0 +1,117 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: .5rem 2.8rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: 1rem;
+        border: none;
+        cursor: pointer;
+    }
+    
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba( #000,.2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+        &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba( #000,.2);
+    }
+    }
+    
+
+    &-animated {
+        
+            animation: fromDown .5s ease-out .75s;
+            animation-fill-mode: backwards;
+        
+        
+        
+    }
+
+    
+    
+    &-white {
+        background-color: $color_white;
+        color: $Color-grey;
+
+        &::after {
+            background-color: $color_white;
+        }
+    }
+
+    &-green {
+        background-image: $background-gradient;
+        color: $color-white;
+
+        &::after {
+            background-image: $background-text;
+        }
+    }
+    
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    
+    &--animated {
+        -webkit-animation-name: fromRight;
+        -moz-animation-name: fromRight;
+        animation-name: fromRight;
+        -webkit-animation-duration: 3.4;
+        -moz-animation-duration: 3.4s;
+        animation-duration: 3.4s;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-iteration-count: 1;
+        -moz-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+    }
+}
+
+.btn-text {
+    &:link,
+    &:visited {
+        font-size: 1rem;
+        color: $Color-grey;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $Color-grey;
+        padding: 3px;
+        transition: all .2s;
+        cursor: pointer;
+    &:hover {
+        background-image: $background-gradient;
+        color: $color_white;
+        box-shadow: 0 1rem 2rem rgba( 0,0,0, .5);
+        transform: translateY(-2px);
+        
+        cursor: pointer;
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba( 0,0,0, .15);
+        transform: translateY(0);
+    }
+}}
+

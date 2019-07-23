@@ -1,0 +1,143 @@
+.form {
+    width: 50%;
+    padding: 3.2rem; 
+
+    @include respond(tab-land){
+        width: 70%
+    }
+    @include respond(phone){
+        width: 100%;
+        margin: auto;
+    }
+
+    .heading-secondary {
+        margin-bottom: 2rem !important;
+    }
+
+    &-group:not(:last-child) {
+        margin-bottom: 1.9rem;
+    }
+    &-input {
+        font-size: 1rem;
+        font-family: inherit;
+        color: inherit;
+        padding: .9rem 1.3rem;
+        border-radius: 2px;
+        background-color: rbga(#fff, 0.5);
+        border: none;
+        border-bottom: 3px solid transparent;
+        width: 90%;
+        display: block;
+        transition: all .3s;
+
+        @include respond(tab-land){
+            width: 80%
+        }
+
+        @include respond(phone){
+            width: 100%;
+            margin: auto;
+        }
+        
+    }
+        &-input:focus {
+          outline: none;
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+          border-bottom: 3px solid #55c57a;
+        }
+        &-input:focus:invalid {
+          border-bottom: 3px solid #ff7730; 
+        }
+        &-input::-webkit-input-placeholder {
+          color: #999; 
+        }
+
+        &-label {
+            font-size: .74rem;
+            font-weight: 700;
+            margin-left: 1.3rem;
+            margin-top: .2rem;
+            display: block;
+            transition: all .3s; 
+            transition: all .5s ;
+        }
+
+
+        /* i put + because label is sibiling with input not a child, and + mean first sibling but if there a sibiling between them we use ~ */
+        &-input:placeholder-shown + &-label{
+            opacity: 0;
+            visibility:  hidden;
+            transform: translateY(-2.6rem);
+/* we use visibility additional to opacity to make it hidden from the page, and use opacity : bacause visibility can't animated*/
+
+        }
+
+        &-radio-group {
+            width: 45%;
+            display: inline-block;
+            margin-bottom: 1.7rem;
+
+
+            @include respond(phone){
+               width: 100%;
+                display: block;
+                margin: 1rem ;
+                text-align:  left;
+            }
+        }
+
+        &-radio-input {
+            display: none;
+        }
+        &-radio-label {
+            cursor: pointer;
+            font-size: 1rem;
+            padding-left: 2.3rem;
+            position: relative;
+        }
+        &-radio-button {
+            height: 1.8rem;
+            width: 1.8rem;
+            border: 5px solid $color_tomato;
+            border-radius: 50%;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: -.23rem;
+
+            &::after {
+                content: '';
+                height: .65rem;
+                width: .65rem;
+                clip-path: circle(50% at 50% 50%);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                background: $color_tomato;
+                opacity: 0;
+                transition: all .3s;
+            }
+        }
+
+        &-radio-input:checked  ~ &-radio-label &-radio-button::after {
+            opacity: 1;
+        }
+        
+button {
+    display: inline-block;
+    width:37%;
+    font-size: 1rem;
+    padding: .5rem .1rem;
+    cursor: pointer;
+
+    @include respond(phone){
+        width: 100%;
+        display:  block;
+        margin: 1rem ;
+        text-align:  center;
+    }
+    
+   
+}
+    }

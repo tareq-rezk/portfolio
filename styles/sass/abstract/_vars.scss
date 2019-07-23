@@ -1,0 +1,26 @@
+// colors
+$Color_darkGrey : #444444cc;
+$Color_grey : #777;
+$color_white : #fff;
+$main-background: #f7f7f7;
+$color_tomato: rgb(216, 74, 23);
+
+// sizes for grid
+
+$grid-width : 80%;
+$gutter-horizontal : 4.2rem;
+$gutter-horizontal-small : 2rem;
+$gutter-vertical :6.3rem;
+$gutter-vertical-small : 1rem;
+
+//gradient
+
+$background-gradient :  repeating-linear-gradient(to right top, rgba(26, 91, 150,.6), rgba(0, 112, 164,.6), rgba(0, 132, 174,.6), 
+rgba(0, 151, 180,.6),rgba(40, 170, 183,.6), rgba(53, 171, 177,.6), rgba(65, 172, 171,.6),
+ rgba(76, 172, 165,.6), rgba(63, 156, 150,.6),
+ rgba(50, 140, 134,.6), rgba(36, 124, 120,.6),
+ rgba(21, 109, 105,.6)) ;
+
+ $background-text : repeating-linear-gradient(to bottom, #646b6d, #727b7e, #808b90, #8f9ba2, #9eacb5, #97a6af, #8f9fa8, #8899a2, #6a7b82, #4e5f62, #344445, #1c2a29);
+
+ $background-btn : repeating-linear-gradient(to right top, #9cc7d0,#068fd0,#7373ef,#5295c4,#2c83cc);

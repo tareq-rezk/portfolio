@@ -1,0 +1,27 @@
+.header {
+    height: 90vh;
+    background-image: $background-gradient ,url('../../images/hero.jpg');
+
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    color: $color_white;
+    position: relative;
+    clip-path: polygon(0 0 , 100% 0 , 100% 80%, 0 100%);
+
+    @include respond(tablets){
+        clip-path: polygon(0 0 , 100% 0 , 100% 90%, 0 100%);
+    }
+    
+
+    .logo-box {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 3.5rem;
+        height: 2.6rem;
+        img{
+            height: 100%;
+        }
+    }
+}

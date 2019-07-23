@@ -1,0 +1,47 @@
+.feature-box {
+    
+    background: rgba($main-background,.5);
+    padding: 2rem;
+    text-align:  center;
+    border-radius: .5rem;
+    box-shadow: 0 1.2rem 3.6rem rgba($Color_darkGrey,.8);
+    transition: all .4s linear;
+    backface-visibility:  hidden;
+    
+
+    svg{
+        font-size: 3.2rem;
+        color: $Color_grey;
+        margin-bottom: 1rem;
+    }
+    &-text {
+        font-size: 1rem;
+
+    }
+    &:hover {
+        transform: translatey(-8px) scale(1.08);
+        box-shadow: 0 2.2rem 4rem rgba($Color_darkGrey,.8); 
+        background: $background-gradient;
+        background: rgba($main-background,.8);
+        
+    }
+
+    &:hover h3 {
+        background-image:$background-text;
+        font-weight:  800;
+        -webkit-background-clip: text;
+        color:transparent;
+    }
+    
+    &:hover p
+    {
+        color:#2e2d2dcc;
+        transform: scale(1.09)
+
+    }
+    &:hover svg {
+        color:#0d5a72cc;
+
+    }
+   
+}

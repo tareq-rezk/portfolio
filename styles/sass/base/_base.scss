@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before{
+    box-sizing:  border-box;
+    margin: 0;
+    padding: 0;
+}
+
+    body {
+    font-family: 'Roboto', sans-serif;
+    font-weight:  400;
+    font-size: 1rem; 
+    line-height: 1.7;
+    color: #777;
+ 
+}
+
+html {
+    overflow-x:  hidden;
+    padding: 0;
+    font-size: 100%; // 1rem = 16px; => 16/16 =1rem;
+
+    @include respond(tab-land){ // less than 1200
+        font-size: 90%; // 1rem = 14.4px ; => 14.4 / 16 = 90%
+    }
+
+    @include respond(tab-port) { // less tan 900
+        font-size: 77%;  // 1 rem = 12.8x ; => 12.8/16 = 80%
+    }
+
+    @include respond(phone){ //less than 600
+        font-size: 80%;
+    }
+
+   
+    @include respond(big-desktop){ // more than 1800
+        font-size: 120%;
+    }
+
+}
+
+body {
+    padding: 20px;
+
+    @include respond(tab-port) { // less tan 900
+        padding: 0;  // 1 rem = 12.8x ; => 12.8/16 = 80%
+
+    }
+
+
+}

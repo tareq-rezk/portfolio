@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="styles/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/compiled-css/main.css'>
+    <title>My First SCSS project | Tareq</title>
+</head>
+<body>
+
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link">About Natous</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Your benfits</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Popular </a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Stories</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Book now</a></li>
+                </ul>
+        </nav>
+    </div>
+    
+     <header class="header"> 
+        <div class="logo-box">
+            <img src="images/logo.png"> 
+             </div> 
+        <div class="header-main-text">
+            
+            <h1>
+                <span>frontEnd </span><span>developer</span>
+            </h1>
+            <h2 class="mine">My First Project with sass</h2>
+            <p>Tareq Ahmed Rezk</p>
+            <a href="" class="btn btn-white btn-animated">join me</a>
+            
+        </div>
+     </header>
+
+    <main>
+        <section class="about">
+            <div class="u-text-center u-margin-b-5">
+                <h2 class="heading-secondary">About Me | work</h2>
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <h3 class="heading-th">Personal Statement</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis repudiandae enim quasi. Eaque natus assumenda, consectetur aliquam repudiandae qui corporis soluta numquam esse itaque perferendis, eius quidem neque provident! Repudiandae.</p>
+                    <h3 class="heading-th">My Education</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde repudiandae laborum distinctio possimus natus veritatis obcaecati, sequi incidunt culpa dolorem vitae quas. Veritatis, commodi. Saepe soluta impedit deserunt doloremque quo.</p>
+
+                    <a href="#popup" class="btn-text">Learn more &rarr;</a>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="aboutPics">
+                        <img src="images/responsive.jpg" alt="" class="aboutPics-photo aboutPics-photo-1">
+                        <img src="images/programming_expriencs.jpg" alt="" class="aboutPics-photo aboutPics-photo-2" >
+                        <img src="images/convertingPsds.png" alt="" class="aboutPics-photo  aboutPics-photo-3">
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <div class="popup-left">
+                    <img src="images/nat-8.jpg">
+                    <img src="images/nat-9.jpg">
+                </div>
+                <div class="popup-right">
+                    <a href="#about" class="close">&times;</a>
+                    <h2 class="heading-secondary">Lorem ipsum dolor.</h2>
+                    <h3 class="heading-th">reiciendis est molestias mollitia</h3>
+                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut nesciunt illum quaerat veniam at earum <p>rerum sapiente deleniti consequatur. Reiciendis voluptates laborum animi eveniet, consequatur velit facere error voluptatem? Nesciunt.</p>
+                    <p> The self-study lessons in this section are written and organised according to the levels of the Common European Framework of Reference for languages (CEFR). There are different types of texts and interactive exercises that practise the reading skills you need to do well in your studies, to get ahead at work and to communicate in English in your free time.
+
+                            , consequatur.</p></div>
+                    <a href="#" class="btn btn-green">Learn more &rarr;</a>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <section class="features">
+            <div class="row">
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="fab fa-adobe icon"></i>
+                        <h3 class="heading-th">Psd to code</h3>
+                        <p class="feature-box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde repudiandae laborum distinctio possimus natus veritatis obcaecati. 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="fas fa-toolbox icon"></i>
+                        <h3 class="heading-th">Maintain Code</h3>
+                        <p class="feature-box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde repudiandae laborum distinctio possimus natus veritatis obcaecati.   
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="fas fa-sync-alt icon"></i>
+                        <h3 class="heading-th">Uptodate</h3>
+                        <p class="feature-box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde repudiandae laborum distinctio possimus natus veritatis obcaecati.    
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="fas fa-code"></i>
+                        <h3 class="heading-th">Clean Code</h3>
+                            <p class="feature-box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde repudiandae laborum distinctio possimus natus veritatis obcaecati. 
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rotate-section">
+                <div class="u-text-center u-margin-b-5">
+                    <h2 class="heading-secondary">Skills and Exprience</h2>
+                </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                        <div class="card-rotate">
+                                <div class="card-rotate-front">
+                                    <div class="front-img front-img-1">
+                                        &nbsp;
+                                    </div>
+                                    <div class="front-heading">
+                                       <h4><span class="s-1">FrontEnd Developer</span></h4>
+                                    </div>
+                                    <p class="front-details">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore nobis beatae recusandae, ipsa possimus, doloremque qui dicta cum unde asperiores mollitia reprehenderit eos? Numquam eius, blanditiis quos a soluta accusantium consectetur eos.
+                                    </p> 
+                                </div>
+                                <div class="card-rotate-back back-1">
+                                    <div class="back-details">
+                                        <ul>
+                                            <li>amet consectetur adipisicing elit. I</li>
+                                            <li>work hard and bla</li>
+                                            <li>speriores mollitia</li>
+                                            <li>Inventore beatae</li>
+                                            <li>can make clones</li>
+                                        </ul>
+                                        <a class="btn-text" style="margin-top:2rem" href="#popup">Join Us</a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card-rotate">
+                            
+                                    <div class="card-rotate-front">
+                                        <div class="front-img front-img-2">
+                                            &nbsp;
+                                        </div>
+                                        <div class="front-heading">
+                                           <h4><span class="s-2">BackEnd Developer</span></h4>
+                                        </div>
+                                        <p class="front-details">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore nobis beatae recusandae, ipsa possimus, doloremque qui dicta cum unde asperiores mollitia reprehenderit eos? Numquam eius, blanditiis quos a soluta accusantium consectetur eos.
+                                        </p> 
+                                    </div>
+                                    <div class="card-rotate-back back-2">
+                                        <div class="back-details">
+                                            <ul>
+                                                <li>amet consectetur adipisicing elit. I</li>
+                                                <li>work hard and bla</li>
+                                                <li>speriores mollitia</li>
+                                                <li>Inventore beatae</li>
+                                                <li>can make clones</li>
+                                            </ul>
+                                            <a class="btn-text" style="margin-top:2rem" href="#popup">Join Us</a>
+                                            
+                                        </div>
+                                    </div>
+                                
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                        <div class="card-rotate">
+                                <div class="card-rotate-front">
+                                    <div class="front-img front-img-3">
+                                        &nbsp;
+                                    </div>
+                                    <div class="front-heading">
+                                       <h4><span class="s-3">full Stack Developer</span></h4>
+                                    </div>
+                                    <p class="front-details">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore nobis beatae recusandae, ipsa possimus, doloremque qui dicta cum unde asperiores mollitia reprehenderit eos? Numquam eius, blanditiis quos a soluta accusantium consectetur eos.
+                                    </p> 
+                                </div>
+                                <div class="card-rotate-back back-3">
+                                    <div class="back-details">
+                                        <ul>
+                                            <li>amet consectetur adipisicing elit. I</li>
+                                            <li>work hard and bla</li>
+                                            <li>speriores mollitia</li>
+                                            <li>Inventore beatae</li>
+                                            <li>can make clones</li>
+                                        </ul>
+                                        <a class="btn-text" style="margin-top:2rem" href="#popup">Join Us</a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+                
+            </div>
+            <div class="u-text-center u-margin-b-5">
+                <a href="" class="btn-text">Contact Us Now</a>
+            </div>
+        </section>
+
+        <section class="stories">
+            <div class="bg-video">
+                <video class="bg-video-content" autoplay muted loop >
+                    <source src="images/media.io_video.mp4" type="video/mp4">
+                    
+                </video>
+            </div>
+            <div class="u-text-center u-margin-b-5" style="z-index:200">
+                <h2 class="heading-secondary">WE MAKE Users Clients HAPPY</h2>
+            </div>
+            <div class="row">
+                <div class="story">
+                    <figure class="story-shape">
+                        <img src="images/nat-8.jpg">
+                        <figcaption class="story-caption">Mary Smith</figcaption>
+
+                    </figure>
+                    <div class="story-text">
+                        <h3 class="heading-th">Lorem ipsum sit amet</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex rem, molestias maiores voluptatum dignissimos illo quas aliquam architecto voluptatem? Ea odit natus nihil at architecto debitis dolor dolorum vitae eligendi.
+                        Saepe vel reprehenderit tenetur, quaerat minus officia animi at ex laboriosam aut fugit modi, numquam iste. facilis!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                    <div class="story">
+                        <figure class="story-shape">
+                            <img src="images/nat-9.jpg">
+                            <figcaption class="story-caption">John Mark</figcaption>
+    
+                        </figure>
+                        <div class="story-text">
+                            <h3 class="heading-th">Lorem ipsum sit amet</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex rem, molestias maiores voluptatum dignissimos illo quas aliquam architecto voluptatem? Ea odit natus nihil at architecto debitis dolor dolorum vitae eligendi.
+                            Saepe vel reprehenderit tenetur, quaerat minus officia animi at ex laboriosam aut fugit modi, numquam iste. facilis!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="u-text-center u-margin-b-5">
+                    <a href="" class="btn btn-green ">See All Stories</a>
+                </div>
+        </section>
+
+        <section class="section-book">
+                <div class="row">
+                    <div class="book">
+                        <div class="book-form">
+                            <form action="#" class="form">
+                                <div class="u-text-center">
+                                    <h2 class="heading-secondary">
+                                        Lorem Inventore 
+                                    </h2>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-input" placeholder="Full name" id="name" required>
+                                    <label for="name" class="form-label">Full name</label>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="email" class="form-input" placeholder="Email address" id="email" required>
+                                    <label for="email" class="form-label">Email address</label>
+                                </div>
+
+                                <div class="form-group u-text-center u-margin-b-5">
+                                    <div class="form-radio-group">
+                                        <input type="radio" class="form-radio-input" id="small" name="size">
+                                        <label for="small" class="form-radio-label">
+                                            <span class="form-radio-button"></span>
+                                            Architecto totam 
+                                        </label>
+                                    </div>
+
+                                    <div class="form-radio-group">
+                                        <input type="radio" class="form-radio-input" id="large" name="size">
+                                        <label for="large" class="form-radio-label">
+                                            <span class="form-radio-button"></span>
+                                            Lorem ipsum dolor
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <button class="btn-green btn">
+                                       Next step &rarr;</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+    
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <img src="images/logo.png" alt="Full logo" class="footer__logo">
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Carrers</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    This design is suitable for all screens and it is my first work on sass. This site is a restructure for design by another designer, but more than 90% of this site is a personal work by me Tariq, since I borrowed the design but I built it myself almost completely, It took me about 30 hours to build the site. I chose the colors according to my vision but the pictures are for the original design.
+                   
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+     <script src="styles/all.min.js"></script>
+</body>
+</html>

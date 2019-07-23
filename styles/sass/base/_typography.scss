@@ -1,0 +1,170 @@
+.mine {
+    background-image: linear-gradient(to right , #f2fffe, #e5f0f1,  #c2c3c5 ,#e1e1e1, #f0f0f0, #ffffff ,  #cd6799 ,#cd6799);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2.5rem;
+    font-weight:  900;
+    text-shadow: 0 20rem 2rem rgb(2, 6, 7);
+    -webkit-animation-name: fromTop;
+  -moz-animation-name: fromTop;
+  animation-name: fromTop;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+    z-index: 50;
+ 
+
+    @include respond(phone){
+        background-image: linear-gradient(to right , #f2fffe, #e5f0f1,  #c2c3c5 ,#e1e1e1, #f0f0f0, #ffffff  ,#cd6799);
+    -webkit-background-clip: text;
+    color: transparent;
+    }
+}
+
+
+
+
+
+.header-main-text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:  center;
+    flex-direction: column; 
+    backface-visibility:  hidden;
+
+    h1 {
+        font-size: 3rem;
+        font-weight:  700;
+        word-spacing: 1px;
+        text-transform: uppercase;
+        -webkit-animation-name: fromLeft;
+        -moz-animation-name: fromLeft;
+        animation-name: fromLeft;
+        -webkit-animation-duration: 1.5s;
+        -moz-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-iteration-count: 1;
+        -moz-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+
+        @include respond(phones) {
+            font-size: 1.3rem;
+            font-weight:  700;
+            word-spacing: normal;
+
+        }
+
+        span:first-child {
+            letter-spacing: 3px;
+            font-size: 3.7rem;
+            font-weight: bolder;
+            text-shadow: 0 9px 8px $Color_grey;
+
+            @include respond(phone) {
+                font-size: 2rem;
+                word-spacing: normal;
+    
+            }
+            }
+        span:last-child {
+                color: $color_tomato;
+                font-weight:  bolder;
+                font-size: 3rem;
+                text-shadow: 0 2px 5px $Color_grey;
+
+                @include respond(phone) {
+                    font-size: 2rem;
+                    word-spacing: normal;
+        
+                }
+                
+                
+            }
+        }
+    p {
+        font-size: 1.7rem;
+         backface-visibility:  hidden;
+         margin-bottom: 60px;
+
+         -webkit-animation-name: fromRight;
+         -moz-animation-name: fromRight;
+         animation-name: fromRight;
+         -webkit-animation-duration: 2.2s;
+         -moz-animation-duration: 2.2s;
+         animation-duration: 2.2s;
+         -webkit-animation-fill-mode: forwards;
+         -moz-animation-fill-mode: forwards;
+         animation-fill-mode: forwards;
+         -webkit-animation-iteration-count: 1;
+         -moz-animation-iteration-count: 1;
+         animation-iteration-count: 1;
+
+         @include respond(phone) {
+            font-size: 1.4rem;
+            word-spacing: normal;
+
+        }
+        }
+
+       
+        }
+
+.heading-secondary {
+    text-transform: uppercase;
+    font-size: 2.7rem;
+    font-weight: bolder;
+    background-image:  $background-text;
+    -webkit-background-clip: text;
+    color:transparent;
+    letter-spacing: 2px;
+    display: inline-block;
+    transition:all .2s ease-in-out;
+    text-align:  center;
+    z-index: 900;
+
+    @include respond(phone) {
+        font-size: 2rem;
+        word-spacing: normal;
+        text-align:  center;
+
+    }
+
+   
+    &:hover {
+        transform: skewY(4deg) skewX(15deg) scale(1.01);
+        text-shadow: 2px 7px 10px rgba($Color_grey,.6);
+    }
+
+}
+
+.heading-th {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $Color_darkGrey;
+    margin-bottom: .6rem;
+
+    @include respond(land-scape) {
+        font-size: .7rem;
+    }
+}
+.about p {
+    font-size: 1.04rem;
+    font-weight:  400;
+    color: $Color_grey;
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+}
